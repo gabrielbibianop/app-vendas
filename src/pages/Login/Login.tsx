@@ -1,16 +1,27 @@
-import { Footer } from "../../components/Footer";
+import { Header } from "../../components/Header";
 export const Login = () => {
   return (
-    <div className="">
-      <div className="fixed top-0 left-0 w-full">
-        <div className="bg-blue-600 py-3">
-          <div className="flex text-center">
-            <h1 className="">LOGO</h1>
-          </div>
+    <div>
+      <Header groupType="logo" />
+
+      <div className="px-5 flex h-screen justify-center items-center text-center">
+        <div className="">
+          <input
+            type="text"
+            className="shadow-xl mt-20 w-full h-10 text-base border p-6 rounded-full"
+            placeholder="Nome"
+          />
+          <input
+            type="text"
+            className="shadow-xl mt-3 w-full h-10 text-base border p-6 rounded-full"
+            placeholder="E-mail"
+          />
+          <button className="mt-8 w-full h-10 text-lg text-white font-semibold border rounded-full shadow-xl bg-blue-600 hover:bg-blue-500">
+            Login
+          </button>
+          <h2 className="mt-10 text-blue-400">Cadastrar-se</h2>
         </div>
       </div>
-
-      <Footer groupType="default" />
     </div>
   );
 };
