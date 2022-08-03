@@ -16,10 +16,14 @@ export const Login = () => {
             className="shadow-xl mt-3 w-full h-10 text-base border p-6 rounded-full"
             placeholder="E-mail"
           />
-          <button className="mt-8 w-full h-10 text-lg text-white font-semibold border rounded-full shadow-xl bg-blue-600 hover:bg-blue-500">
-            Login
-          </button>
-          <h2 className="mt-10 text-blue-400">Cadastrar-se</h2>
+          <a href="/Home">
+            <button className="mt-8 w-full h-10 text-lg text-white font-semibold border rounded-full shadow-xl bg-blue-600 hover:bg-blue-500">
+              Login
+            </button>
+          </a>
+          <div className="mt-10 text-blue-400">
+            <a href="/Cadastro">Cadastrar-se</a>
+          </div>
         </div>
       </div>
     </div>
