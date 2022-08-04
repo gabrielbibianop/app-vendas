@@ -17,6 +17,27 @@
       "username": "Bret",
       "email": "bret@bret.com",
       "id": 3
+    },
+    {
+      "name": "User Bret",
+      "username": "Bret",
+      "email": "bret@bret.com",
+      "id": 4
+    },
+    {
+      "name": "0656521",
+      "email": "26554984",
+      "id": 5
+    },
+    {
+      "name": "lkewsd",
+      "email": "132432",
+      "id": 6
+    },
+    {
+      "name": "wefwe",
+      "email": "234",
+      "id": 7
     }
   ],
   "product": [
@@ -33,6 +54,13 @@
       "estoque": 30,
       "preco": 20,
       "id": 2
+    },
+    {
+      "description": "Brinco branco",
+      "custo": 16,
+      "estoque": 2,
+      "preco": 28,
+      "id": 3
     }
   ]
 }
