@@ -1,0 +1,38 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "User Bret",
+      "username": "Bret",
+      "email": "bret@bret.com"
+    },
+    {
+      "name": "User Bret",
+      "username": "Bret",
+      "email": "bret@bret.com",
+      "id": 2
+    },
+    {
+      "name": "User Bret",
+      "username": "Bret",
+      "email": "bret@bret.com",
+      "id": 3
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "description": "Brinco bonito 1",
+      "custo": 10,
+      "estoque": 30,
+      "preco": 10
+    },
+    {
+      "description": "Brinco bonito 2",
+      "custo": 10,
+      "estoque": 30,
+      "preco": 20,
+      "id": 2
+    }
+  ]
+}
