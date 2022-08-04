@@ -14,7 +14,7 @@ export const Login = () => {
           <input
             type="text"
             className="shadow-xl mt-3 w-full h-10 text-base border p-6 rounded-full"
-            placeholder="E-mail"
+            placeholder="Senha"
           />
           <a href="/Home">
             <button className="mt-8 w-full h-10 text-lg text-white font-semibold border rounded-full shadow-xl bg-blue-600 hover:bg-blue-500">

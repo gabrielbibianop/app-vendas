@@ -9,7 +9,7 @@ export const Header = ({ groupType }: HeaderProps) => {
           {groupType === "logo" && (
             <>
               <div className="h-14">
-                <img className="" src="images/Logo.png" alt="" />
+                <img className="" src="public/images/Logo.png" alt="" />
               </div>
             </>
           )}

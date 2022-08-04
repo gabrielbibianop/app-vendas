@@ -2,7 +2,7 @@ type FooterProps = {
   groupType: "default" | "save" | "sell" | "exit";
 };
 export const Footer = ({ groupType }: FooterProps) => {
-  const imageClass = `w-10 h-10 `;
+  const imageClass = `w-10 h-10`;
   return (
     <footer className="bg-blue-600 fixed bottom-0 left-0 w-full h-16 flex justify-center items-center">
       <div className="w-full max-w-md">
