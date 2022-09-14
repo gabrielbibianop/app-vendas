@@ -92,7 +92,7 @@ const Home: NextPage = () => {
             <tr key={product.id}>
               <td>{product.id}</td>
               <td>{product.description}</td>
-              <td>{product.cost}</td>
+              <td>{product.cost.toString()}</td>
               <td>{product.price}</td>
               <td>{product.stock}</td>
             </tr>
