@@ -1,30 +1,50 @@
 {
-  "name": "front-end",
+  "name": "app-vendas-nextjs",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "fake-server": "json-server --watch server/db.json --port 3333"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate",
+    "db-create-branch": "pscale branch create app-vendas migration",
+    "db-connect": "pscale connect app-vendas migration --port 3309",
+    "db-prisma-push": "npx prisma db push",
+    "db-deploy-request": "pscale deploy-request create app-vendas migration",
+    "db-merge-deploy-request": "pscale deploy-request deploy app-vendas 2"
   },
   "dependencies": {
-    "@tanstack/react-query": "^4.0.10",
-    "axios": "^0.27.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0"
+    "@next-auth/prisma-adapter": "^1.0.4",
+    "@prisma/client": "^4.2.1",
+    "@trpc/client": "^9.27.0",
+    "@trpc/next": "^9.27.0",
+    "@trpc/react": "^9.27.0",
+    "@trpc/server": "^9.27.0",
+    "cors": "^2.8.5",
+    "next": "12.2.3",
+    "next-auth": "^4.10.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-query": "3.39.2",
+    "react-select": "^5.4.0",
+    "superjson": "^1.9.1",
+    "zod": "^3.17.3"
   },
   "devDependencies": {
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/node": "18.0.0",
+    "@types/react": "18.0.14",
+    "@types/react-dom": "18.0.5",
     "autoprefixer": "^10.4.8",
-    "json-server": "^0.17.0",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.6",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.0"
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.2.3",
+    "postcss": "^8.4.16",
+    "prisma": "^4.2.1",
+    "tailwindcss": "^3.1.8",
+    "typescript": "4.7.4"
+  },
+  "ct3aMetadata": {
+    "initVersion": "5.6.0"
   }
 }
